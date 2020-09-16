@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Page from '../layout/Page';
+
 const PageNotFound = () => (
-  <>
-    <div>Page not found!</div>
-  </>
+  <Page>
+    Page not found!
+  </Page>
 );
 
 export default PageNotFound;
