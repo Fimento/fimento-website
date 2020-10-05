@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from './Header';
-import StyledPage from '../styledComponents/StyledPage';
-import GlobalStyle from '../styledComponents/GlobalStyle';
+import StyledPage from '../styled/layouts/StyledPage';
+import GlobalStyle from '../styled/GlobalStyle';
 
 const Page = ({ children }) => (
   <StyledPage>
