@@ -7,6 +7,7 @@ const colours = {
   beige: '#F3CCA7',
   lightBeige: '#D9C8A8',
   darkBeige: '#DAC9BD',
+  grey: '#8E8986',
   orange: '#BE560E',
   error: '#D65C47',
   lightError: '#DF806F',
