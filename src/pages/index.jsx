@@ -174,14 +174,21 @@ const Home = () => (
         </StyledFlexBox>
       </StyledFlexBox>
     </Section>
-    <Section>
+    <Section background="darkBeige">
       <Helmet>
         <script type="text/javascript" src="https://webforms.pipedrive.com/f/loader" />
       </Helmet>
-      <div
-        className="pipedriveWebForms"
-        data-pd-webforms="https://webforms.pipedrive.com/f/1FPH7szALjUEX0fTZ60wJ9laKQaE4xFU5o9Y9CSumrDlhorB5sRVJn7yTVzs8Y4Bd?embeded=1&uuid=id4o21w8"
-      />
+      <AsideLayout>
+        <StyledAside>
+          <StyledIFrame>
+            <div
+              className="pipedriveWebForms"
+              data-pd-webforms="https://webforms.pipedrive.com/f/1FPH7szALjUEX0fTZ60wJ9laKQaE4xFU5o9Y9CSumrDlhorB5sRVJn7yTVzs8Y4Bd?embeded=1&uuid=id4o21w8"
+            />
+          </StyledIFrame>
+        </StyledAside>
+        <StyledTree src={tree} alt="" />
+      </AsideLayout>
     </Section>
   </Page>
 );
