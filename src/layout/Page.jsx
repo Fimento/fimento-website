@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Header from './Header';
 import StyledPage from '../styled/layouts/StyledPage';
 import GlobalStyle from '../styled/GlobalStyle';
+import Footer from '../logic/layouts/Footer';
 
 const Page = ({ children }) => (
   <StyledPage>
@@ -15,6 +16,7 @@ const Page = ({ children }) => (
     <GlobalStyle />
     <Header />
     {children}
+    <Footer />
   </StyledPage>
 );
 
