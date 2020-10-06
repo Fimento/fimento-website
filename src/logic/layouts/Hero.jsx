@@ -13,8 +13,8 @@ import StyledVideo from '../../styled/elements/StyledVideo';
 const Hero = () => (
   <StyledHero>
     <StyledHeroContent>
-      <StyledH1>Cloud banking of the future</StyledH1>
       <StyledVideo autoPlay loop muted playsInline src={honeyCombAnimation} />
+      <StyledH1>Cloud banking of the future</StyledH1>
       <StyledParagraph>
         Providing next-generation financial services and
         advanced data analysis - for faster time to market,

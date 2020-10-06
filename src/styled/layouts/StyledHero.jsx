@@ -40,7 +40,7 @@ export const StyledHeroContent = styled.div`
   }
 
   ${StyledButton} {
-    align-self: center;
+    align-self: start;
   }
 
   ${style.media.tablet`
