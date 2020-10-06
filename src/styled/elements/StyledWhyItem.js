@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import style from '../../constants/style';
-import StyledFlexBox from '../layouts/StyledFlexBox';
 import StyledParagraph from './StyledParagraph';
 import StyledIcon from './StyledIcon';
 
-const StyledWhyItem = styled(StyledFlexBox)`
+const StyledWhyItem = styled.div`
+  display: flex;
   align-items: flex-start;
   flex-direction: row;
   margin: 0.5rem 0;

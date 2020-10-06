@@ -9,8 +9,9 @@ import Section from '../logic/layouts/Section';
 import Hero from '../logic/layouts/Hero';
 
 import honeyComb from '../assets/honey-comb-img.png';
-import polygon from '../assets/polygon.png';
 import digitalPayment from '../assets/digital-payment.png';
+import tree from '../assets/picture-tree.jpg';
+// Board
 import hanna from '../assets/hanna.jpg';
 import bruno from '../assets/bruno.jpg';
 import mats from '../assets/mats.jpg';
@@ -19,11 +20,10 @@ import lars from '../assets/lars-hallenius.jpg';
 
 import StyledParagraph from '../styled/elements/StyledParagraph';
 import StyledImg from '../styled/elements/StyledImg';
-import StyledSpan from '../styled/elements/StyledSpan';
 import StyledH2 from '../styled/elements/StyledH2';
 import StyledButton from '../styled/elements/StyledButton';
-import StyledWhyItem from '../styled/elements/StyledWhyItem';
-import StyledIcon from '../styled/elements/StyledIcon';
+import StyledIFrame from '../styled/elements/StyledIFrame';
+import StyledTree from '../styled/elements/StyledTree';
 
 import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 import AsideLayout, { StyledAside } from '../logic/layouts/AsideLayout';
@@ -39,10 +39,10 @@ const Home = () => (
     </Section>
     <Section background="white" marginTop="none" marginBottom="none">
       <AsideLayout>
-        <StyledH2>What we can offer you</StyledH2>
         <StyledAside>
-          <StyledImg src={honeyComb} alt="" />
+          <StyledImg src={honeyComb} alt="" width="100%" />
         </StyledAside>
+        <StyledH2>What we can offer you</StyledH2>
         <StyledFlexBox flexDirection="column" maxWidth="75%">
           <StyledParagraph>
             The Fimento ecosystem is fully API-based and
@@ -66,59 +66,13 @@ const Home = () => (
       </AsideLayout>
     </Section>
     <Section background="darkBeige" marginTop="none" marginBottom="none">
-      <AsideLayout>
-        <StyledH2 textColour="white">Why Fimento?</StyledH2>
-        <StyledAside>
-          <StyledParagraph>
-            The way we see it, our job is to coach our
-            clients so that they can make the best
-            decisions and find the best solution, given
-            their unique business goals and needs.
-            Typically, the results are:
-          </StyledParagraph>
-          <StyledFlexBox flexDirection="column" justifyContent="start" width="100%">
-            <StyledWhyItem>
-              <StyledIcon src={polygon} maxHeight="1.3rem" alt="" />
-              <StyledParagraph>Faster time to market</StyledParagraph>
-            </StyledWhyItem>
-            <StyledWhyItem>
-              <StyledIcon src={polygon} maxHeight="1.3rem" alt="" />
-              <StyledParagraph>Less manual processes</StyledParagraph>
-            </StyledWhyItem>
-            <StyledWhyItem>
-              <StyledIcon src={polygon} maxHeight="1.3rem" alt="" />
-              <StyledParagraph>Greater customer personalization</StyledParagraph>
-            </StyledWhyItem>
-            <StyledParagraph>
-              Sounds intriguing?
-            </StyledParagraph>
-            <StyledButton as={SmoothScrollAnchor} primary="white" secondary="darkBeige" href="#contact">Contact us</StyledButton>
-          </StyledFlexBox>
-        </StyledAside>
-        <StyledFlexBox flexDirection="column" maxWidth="75%">
-          <StyledParagraph>
-            What we do best, is focusing on you. Our
-            primary driving force is the democratization
-            of banking and financial services, creating
-            greater financial wellness for more people
-            and businesses. We firmly believe that
-            fintech and digitalization are the tools to
-            get us there.
-          </StyledParagraph>
-          <StyledParagraph>
-            Our cloud based infrastructure works as an
-            enabler for providing custom made solutions
-            for companies of any size or industry, both
-            financial and non-financial.
-          </StyledParagraph>
-        </StyledFlexBox>
-      </AsideLayout>
+      <WhyUs />
     </Section>
     <Section background="white" marginTop="none" marginBottom="none">
       <AsideLayout>
         <StyledH2>Case studies</StyledH2>
         <StyledAside>
-          <StyledImg src={digitalPayment} alt="" />
+          <StyledImg src={digitalPayment} alt="" width="100%" />
         </StyledAside>
         <StyledFlexBox flexDirection="column" maxWidth="75%">
           <StyledParagraph>
