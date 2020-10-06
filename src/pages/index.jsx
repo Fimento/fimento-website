@@ -28,30 +28,14 @@ import StyledIcon from '../styled/elements/StyledIcon';
 import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 import AsideLayout, { StyledAside } from '../logic/layouts/AsideLayout';
 import ManagementCard from '../logic/layouts/ManagementCard';
+import Quote from '../logic/layouts/Quote';
+import WhyUs from '../logic/layouts/WhyUs';
 
 const Home = () => (
   <Page>
     <Hero />
     <Section background="lightBeige">
-      <StyledParagraph fontStyle="italic" textColour="white" fontSize="big">&quot;In the not too distant future, nearly every company will be a financial services company.&quot;</StyledParagraph>
-      <StyledParagraph>- Angela Strange,</StyledParagraph>
-      <StyledParagraph>General Partner Andreessen Horowitz</StyledParagraph>
-      <StyledFlexBox justifyContent="space-around">
-        <StyledFlexBox paddingLeft="small" borderLeftColour="orange" maxWidth="30%">
-          <StyledParagraph>
-            On average, non-financial companies can&nbsp;
-            <StyledSpan textColour="orange">increase revenue by 2–5 times</StyledSpan>
-            &nbsp;by adding financial services.
-          </StyledParagraph>
-        </StyledFlexBox>
-        <StyledFlexBox paddingLeft="small" borderLeftColour="orange" maxWidth="30%">
-          <StyledParagraph>
-            Embedded finance offers a market opportunity&nbsp;
-            <StyledSpan textColour="orange">&gt;USD 7 trillion</StyledSpan>
-            &nbsp;in 10 years time.
-          </StyledParagraph>
-        </StyledFlexBox>
-      </StyledFlexBox>
+      <Quote />
     </Section>
     <Section background="white" marginTop="none" marginBottom="none">
       <AsideLayout>
