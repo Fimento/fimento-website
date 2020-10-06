@@ -1,14 +1,35 @@
 import styled from 'styled-components';
 import style from '../../constants/style';
 
+import StyledH3 from '../elements/StyledH3';
+import StyledImg from '../elements/StyledImg';
+import StyledFlexBox from './StyledFlexBox';
+
 export const StyledHeaderContent = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  height: 100%;
+  height: 4rem;
   width: 100%;
   max-width: 70rem;
-  margin: 2rem 1rem 1rem 1rem;
+  margin-top: ${style.spaces.regular};
+  ${StyledH3} {
+    margin: 0;
+  }
+
+  ${StyledImg} {
+    height: 3rem;
+    margin-right: ${style.spaces.small};
+  }
+  ${StyledFlexBox} {
+    align-items: center;
+  }
+
+  ${style.media.tablet`
+    ${StyledImg} {
+      height: 5.5rem;
+    }
+  `}
 `;
 
 const StyledHeader = styled.header`
@@ -26,7 +47,7 @@ const StyledHeader = styled.header`
   `}
 
   ${style.media.laptop`
-    height: 4.5rem;
+    height: 6rem;
   `}
 `;
 
