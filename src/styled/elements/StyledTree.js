@@ -7,7 +7,8 @@ import StyledImg from './StyledImg';
 const StyledTree = styled(StyledImg)`
   display: none;
   ${style.media.laptop`
-    display: block
+    width: 100%;
+    display: block;
   `}
 `;
 
