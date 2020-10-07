@@ -20,9 +20,16 @@ const StyledWhyUs = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
+`;
 
+const StyledWhyUsContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
   ${style.media.laptop`
     flex-direction: row;
+    justify-content: flex-start;
     width: 100%;
   `}
 `;
@@ -33,12 +40,8 @@ const StyledLeftContent = styled.div`
   align-items: flex-start;
   justify-content: center;
 
-  ${StyledH2} {
-    color: ${style.colours.white};
-  }
-
   ${style.media.laptop`
-    width: 38%;
+    width: 50%;
   `}
 `;
 const StyledRightContent = styled.div`
@@ -52,10 +55,19 @@ const StyledRightContent = styled.div`
   }
 
   ${style.media.laptop`
-    width: 35%;
-    margin-top: 4.5rem;
+    width: 50%;
     margin-left: ${style.spaces.regular}
   `}
+`;
+
+const StyledTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: ${style.spaces.regular};
+
+  ${StyledH2} {
+    color: ${style.colours.white};
+  }
 `;
 
 const StyledSellParagraph = styled(StyledParagraph)`
@@ -64,51 +76,55 @@ const StyledSellParagraph = styled(StyledParagraph)`
 
 const WhyUs = () => (
   <StyledWhyUs>
-    <StyledLeftContent>
+    <StyledTitle>
       <StyledH2>Why Fimento?</StyledH2>
-      <StyledParagraph>
-        What we do best, is focusing on you. Our
-        primary driving force is the democratization
-        of banking and financial services, creating
-        greater financial wellness for more people
-        and businesses. We firmly believe that
-        fintech and digitalization are the tools to
-        get us there.
-      </StyledParagraph>
-      <StyledParagraph>
-        Our cloud based infrastructure works as an
-        enabler for providing custom made solutions
-        for companies of any size or industry, both
-        financial and non-financial.
-      </StyledParagraph>
-    </StyledLeftContent>
-    <StyledRightContent>
-      <StyledParagraph>
-        The way we see it, our job is to coach our
-        clients so that they can make the best
-        decisions and find the best solution, given
-        their unique business goals and needs.
-        Typically, the results are:
-      </StyledParagraph>
-      <StyledFlexBox>
-        <StyledWhyItem>
-          <StyledIcon src={polygon} alt="" />
-          <StyledParagraph>Faster time to market</StyledParagraph>
-        </StyledWhyItem>
-        <StyledWhyItem>
-          <StyledIcon src={polygon} alt="" />
-          <StyledParagraph>Less manual processes</StyledParagraph>
-        </StyledWhyItem>
-        <StyledWhyItem>
-          <StyledIcon src={polygon} alt="" />
-          <StyledParagraph>Greater customer personalization</StyledParagraph>
-        </StyledWhyItem>
-      </StyledFlexBox>
-      <StyledSellParagraph>
-        Sounds intriguing?
-      </StyledSellParagraph>
-      <StyledButton as={SmoothScrollAnchor} primary="white" secondary="darkBeige" href="#contact">Contact us</StyledButton>
-    </StyledRightContent>
+    </StyledTitle>
+    <StyledWhyUsContent>
+      <StyledLeftContent>
+        <StyledParagraph>
+          What we do best, is focusing on you. Our
+          primary driving force is the democratization
+          of banking and financial services, creating
+          greater financial wellness for more people
+          and businesses. We firmly believe that
+          fintech and digitalization are the tools to
+          get us there.
+        </StyledParagraph>
+        <StyledParagraph>
+          Our cloud based infrastructure works as an
+          enabler for providing custom made solutions
+          for companies of any size or industry, both
+          financial and non-financial.
+        </StyledParagraph>
+      </StyledLeftContent>
+      <StyledRightContent>
+        <StyledParagraph>
+          The way we see it, our job is to coach our
+          clients so that they can make the best
+          decisions and find the best solution, given
+          their unique business goals and needs.
+          Typically, the results are:
+        </StyledParagraph>
+        <StyledFlexBox>
+          <StyledWhyItem>
+            <StyledIcon src={polygon} alt="" />
+            <StyledParagraph>Faster time to market</StyledParagraph>
+          </StyledWhyItem>
+          <StyledWhyItem>
+            <StyledIcon src={polygon} alt="" />
+            <StyledParagraph>Less manual processes</StyledParagraph>
+          </StyledWhyItem>
+          <StyledWhyItem>
+            <StyledIcon src={polygon} alt="" />
+            <StyledParagraph>Greater customer personalization</StyledParagraph>
+          </StyledWhyItem>
+        </StyledFlexBox>
+        <StyledSellParagraph>
+          Sounds intriguing?
+        </StyledSellParagraph>
+        <StyledButton as={SmoothScrollAnchor} primary="white" secondary="darkBeige" href="#contact">Contact us</StyledButton>
+      </StyledRightContent>
+    </StyledWhyUsContent>
   </StyledWhyUs>
 );
 
