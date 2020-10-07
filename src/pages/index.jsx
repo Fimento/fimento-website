@@ -9,14 +9,7 @@ import Section from '../logic/layouts/Section';
 import Hero from '../logic/layouts/Hero';
 
 import honeyComb from '../assets/honey-comb-img.png';
-import digitalPayment from '../assets/digital-payment.png';
-import tree from '../assets/picture-tree.jpg';
-// Board
-import hanna from '../assets/hanna.jpg';
-import bruno from '../assets/bruno.jpg';
-import mats from '../assets/mats.jpg';
-import trond from '../assets/trond-dale.jpg';
-import lars from '../assets/lars-hallenius.jpg';
+import tree from '../assets/tree.png';
 
 import StyledParagraph from '../styled/elements/StyledParagraph';
 import StyledImg from '../styled/elements/StyledImg';
@@ -30,6 +23,7 @@ import AsideLayout, { StyledAside } from '../logic/layouts/AsideLayout';
 import Board from '../logic/layouts/Board';
 import Quote from '../logic/layouts/Quote';
 import WhyUs from '../logic/layouts/WhyUs';
+import CaseStudies from '../logic/layouts/CaseStuides';
 
 const Home = () => (
   <Page>
@@ -69,24 +63,7 @@ const Home = () => (
       <WhyUs />
     </Section>
     <Section background="white" marginTop="none" marginBottom="none">
-      <AsideLayout>
-        <StyledH2>Case studies</StyledH2>
-        <StyledAside>
-          <StyledImg src={digitalPayment} alt="" width="100%" />
-        </StyledAside>
-        <StyledFlexBox flexDirection="column" maxWidth="75%">
-          <StyledParagraph>
-            We partner with our clients to understand
-            their business and their challenges. Our
-            focus is on finding and developing
-            solutions that adds true value.
-          </StyledParagraph>
-          <StyledParagraph>
-            Want more?
-          </StyledParagraph>
-          <StyledButton as={SmoothScrollAnchor} href="#contact">Read more</StyledButton>
-        </StyledFlexBox>
-      </AsideLayout>
+      <CaseStudies />
     </Section>
     <Section background="white" marginTop="none" marginBottom="none">
       <Board />
