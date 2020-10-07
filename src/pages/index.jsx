@@ -27,7 +27,7 @@ import StyledTree from '../styled/elements/StyledTree';
 
 import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 import AsideLayout, { StyledAside } from '../logic/layouts/AsideLayout';
-import ManagementCard from '../logic/layouts/ManagementCard';
+import Board from '../logic/layouts/Board';
 import Quote from '../logic/layouts/Quote';
 import WhyUs from '../logic/layouts/WhyUs';
 
@@ -89,28 +89,7 @@ const Home = () => (
       </AsideLayout>
     </Section>
     <Section background="white" marginTop="none" marginBottom="none">
-      <StyledFlexBox flexDirection="column">
-        <StyledFlexBox flexDirection="column" justifyContent="start" maxWidth="45%">
-          <StyledH2>
-            Board and Senior Management
-          </StyledH2>
-          <StyledParagraph maxWidth="80%">
-            We are a mix of nationalities, backgrounds
-            and experiences, collectivley striving to
-            democratize banking and finance solutions
-            through digitalization. We believe technology
-            will lead to fairer access to funding, lending
-            and liquidity.
-          </StyledParagraph>
-        </StyledFlexBox>
-        <StyledFlexBox maxWidth="90%" flexWrap="wrap" justifyContent="flex-end">
-          <ManagementCard img={hanna} name="Hanna Raftell" title="CEO" />
-          <ManagementCard img={trond} name="Trond Dale" title="Chairman of the Board" />
-          <ManagementCard img={bruno} name="Bruno Godefroy" title="CTO" />
-          <ManagementCard img={mats} name="Mats Berglund" title="Boardmember" />
-          <ManagementCard img={lars} name="Lars Hallenius" title="Boardmember" />
-        </StyledFlexBox>
-      </StyledFlexBox>
+      <Board />
     </Section>
     <Section background="darkBeige">
       <Helmet>
