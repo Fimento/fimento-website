@@ -129,7 +129,6 @@ export const StyledHeroContent = styled.div`
 const StyledHero = styled.section`
   display: flex;
   background-color: ${style.colours.white};
-  height: 100vh;
 `;
 
 export default StyledHero;
