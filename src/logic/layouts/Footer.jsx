@@ -17,7 +17,7 @@ import fimentoInfo from '../../constants/fimentoInfo';
 const Footer = () => (
   <StyledFooter>
     <StyledFooterContent>
-      <StyledFlexBox minHeight="20%">
+      <StyledFlexBox minHeight="10%">
         <StyledImg src={fimentoLogo} alt="Fimento" />
       </StyledFlexBox>
       <StyledWrappedColumn

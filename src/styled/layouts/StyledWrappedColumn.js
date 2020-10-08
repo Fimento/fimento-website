@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import StyledFlexBox from './StyledFlexBox';
+import StyledParagraph from '../elements/StyledParagraph';
 
 import style from '../../constants/style';
 
@@ -25,6 +26,40 @@ const StyledWrappedColumn = styled(StyledFlexBox)`
         margin-top: ${style.spaces[props.inBetweenMargin]};
       }
     `)}
+  `}
+  ${StyledFlexBox} >  ${StyledParagraph} {
+    font-size: ${style.fontSizes.tiny};
+
+    ${style.media.laptop`
+      font-size: ${style.fontSizes.small};
+    `}
+  }
+  & > *:first-child {
+    order: 3
+    margin-bottom: ${style.spaces.big};
+    margin-top: ${style.spaces.big};
+  }
+  & > *:nth-child(2) {
+    order: 1
+    margin-bottom: ${style.spaces.regular};
+  }
+  & > *:last-child {
+    order: 2
+    margin-bottom: ${style.spaces.regular};
+    margin-top: ${style.spaces.regular};
+  }
+
+  ${style.media.tablet`
+    & > *:first-child {
+      order: 0;
+      margin-top: 0;
+    }
+    & > *:nth-child(2) {
+      order: 0;
+    }
+    & > *:last-child {
+      order: 0;
+    }
   `}
 
   ${(props) => style.media[props.breakSize]`

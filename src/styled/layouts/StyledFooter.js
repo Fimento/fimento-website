@@ -19,15 +19,16 @@ export const StyledFooterContent = styled('div')`
 
   ${StyledParagraph} {
     margin: ${style.spaces.tiny} 0 0;
+    color: ${style.colours.secondary};
+    font-weight: ${style.fontWeights.regular};
     ${collapseMarginMixin}
   }
   ${StyledImg} {
-    max-height: 49%;
+    max-height: 4rem;
   }
 
   ${StyledAnchor} {
     color: ${style.colours.secondary};
-    font-weight: ${style.fontWeights.bold};
   }
 
   ${StyledWrappedColumn} > ${StyledFlexBox} {
