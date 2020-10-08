@@ -54,6 +54,10 @@ const StyledRightContent = styled.div`
     justify-content: start;
   }
 
+  ${StyledButton} {
+    margin: ${style.spaces.regular} 0 ${style.spaces.regular} 0;
+  }
+
   ${style.media.laptop`
     width: 50%;
     margin-left: ${style.spaces.regular}
@@ -71,7 +75,7 @@ const StyledTitle = styled.div`
 `;
 
 const StyledSellParagraph = styled(StyledParagraph)`
-  margin: ${style.spaces.small} 0 ${style.spaces.small} 0;
+  margin: ${style.spaces.small} 0 ${style.spaces.regular} 0;
 `;
 
 const WhyUs = () => (
@@ -118,10 +122,10 @@ const WhyUs = () => (
             <StyledIcon src={polygon} alt="" />
             <StyledParagraph>Greater customer personalization</StyledParagraph>
           </StyledWhyItem>
+          <StyledSellParagraph>
+            Sounds intriguing?
+          </StyledSellParagraph>
         </StyledFlexBox>
-        <StyledSellParagraph>
-          Sounds intriguing?
-        </StyledSellParagraph>
         <StyledButton as={SmoothScrollAnchor} primary="white" secondary="darkBeige" href="#contact">Contact us</StyledButton>
       </StyledRightContent>
     </StyledWhyUsContent>
