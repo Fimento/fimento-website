@@ -25,14 +25,12 @@ const StyledBoard = styled.div`
 const StyledDesc = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: flex-start;
   margin-bottom: ${style.spaces.regular};
 
   ${style.media.laptop`
     width: calc(50% - (${style.spaces.tiny} * 2));
-    justify-content: flex-start;
-    align-items: start;
   `}
 `;
 const StyledBoardMembers = styled.div`
