@@ -12,6 +12,7 @@ const StyledQuoteLayout = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: start;
+  padding-bottom: ${style.spaces.huge};
 `;
 
 const StyledQuoteContent = styled.div`
@@ -52,17 +53,17 @@ const StyledQuoteContent = styled.div`
 const StyledProofContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: start;
 
   ${StyledSpan} {
     font-size: ${style.fontSizes.tiny};
     color: ${style.colours.orange};
   }
 
-  ${style.media.laptop`
+  ${style.media.tablet`
     max-width: 80%;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: stretch;
 
     ${StyledSpan} {
       font-size: ${style.fontSizes.smaller};
@@ -77,7 +78,7 @@ const StyledProof = styled(StyledFlexBox)`
   & > *:first-child {
     font-size: ${style.fontSizes.tiny};
   }
-
+  margin-right: ${style.spaces.big};
   ${style.media.laptop`
     max-width: 38%;
 
@@ -99,17 +100,17 @@ const Quote = () => (
       <StyledParagraph>General Partner Andreessen Horowitz</StyledParagraph>
     </StyledQuoteContent>
     <StyledProofContent>
-      <StyledProof borderLeftColour="orange">
+      <StyledProof maxWidth="100%" borderLeftColour="orange">
         <StyledParagraph>
           On average, non-financial companies can&nbsp;
           <StyledSpan>increase revenue by 2–5 times</StyledSpan>
           &nbsp;by adding financial services.
         </StyledParagraph>
       </StyledProof>
-      <StyledProof borderLeftColour="orange">
+      <StyledProof maxWidth="75%" borderLeftColour="orange">
         <StyledParagraph>
           Embedded finance offers a market opportunity&nbsp;
-          <StyledSpan>&gt;USD 7 trillion</StyledSpan>
+          <StyledSpan>&gt; USD 7 trillion</StyledSpan>
           &nbsp;in 10 years time.
         </StyledParagraph>
       </StyledProof>
