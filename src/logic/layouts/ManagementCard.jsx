@@ -8,7 +8,7 @@ import StyledImg from '../../styled/elements/StyledImg';
 import style from '../../constants/style';
 
 const StyledRole = styled(StyledParagraph)`
-  max-width: 58%;
+  max-width: 66%;
 `;
 
 const StyledCard = styled.div`
@@ -31,7 +31,7 @@ const StyledCard = styled.div`
     flex-direction: row;
     width: calc(50% - (2 * ${style.spaces.tiny}));
     margin: ${style.spaces.tiny} ${style.spaces.small} ${style.spaces.tiny} 0;
-    height: auto;
+    min-height: 10rem;
     ${StyledImg} {
       width: 50%;
       height: auto;
