@@ -9,6 +9,7 @@ import StyledButton from '../../styled/elements/StyledButton';
 import StyledH2 from '../../styled/elements/StyledH2';
 
 import digitalPayment from '../../assets/digital-payment.png';
+import digitalPaymentMobile from '../../assets/digital-payment-mobile.jpg';
 
 import SmoothScrollAnchor from '../elements/SmoothScrollAnchor';
 
@@ -57,14 +58,30 @@ const StyledRightContent = styled.div`
   flex-direction: column;
   align-items: center;
 
-  ${StyledImg} {
-  }
   ${style.media.laptop`
     width: 50%;
     height: 100%;
     justify-content: flex-end;
   `}
 
+`;
+
+const CaseImageMobile = styled(StyledImg)`
+  width: calc(100% + (2 * ${style.spaces.regular}));
+  display: block;
+  ${style.media.laptop`
+    display: none;
+  `}
+  ${style.media.tablet`
+    width: calc(100% + (2 * 3rem));
+  `}
+`;
+const CaseImageLaptop = styled(StyledImg)`
+  width: 100%;
+  display: none;
+  ${style.media.laptop`
+    display: block;
+  `}
 `;
 
 const CaseStudies = () => (
@@ -85,7 +102,8 @@ const CaseStudies = () => (
       </StyledLeftContent>
     </StyledLeft>
     <StyledRightContent>
-      <StyledImg src={digitalPayment} alt="" width="100%" />
+      <CaseImageMobile src={digitalPaymentMobile} alt="" />
+      <CaseImageLaptop src={digitalPayment} alt="" />
     </StyledRightContent>
   </StyledCaseStudies>
 );
