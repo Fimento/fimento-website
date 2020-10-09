@@ -32,7 +32,7 @@ const Footer = () => (
           <StyledParagraph><StyledAnchor as={Link} to="/the-product">Why us</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={Link} to="/the-product">Case studies</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={Link} to="/the-product">About us</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/the-product">Blog</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={Link} to="/blog">Blog</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={Link} to="/for-developers">For Developers</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
         <StyledFlexBox flexDirection="column">
