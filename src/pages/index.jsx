@@ -24,19 +24,19 @@ const Home = () => (
     <Section background="lightBeige">
       <Quote />
     </Section>
-    <Section background="white" marginTop="none" marginBottom="none">
+    <Section id="offer" background="white" marginTop="none" marginBottom="none">
       <Offer />
     </Section>
-    <Section background="darkBeige" marginTop="none" marginBottom="none">
+    <Section id="why-us" background="darkBeige" marginTop="none" marginBottom="none">
       <WhyUs />
     </Section>
-    <Section background="white" marginTop="none" marginBottom="none">
+    <Section id="case-studies" background="white" marginTop="none" marginBottom="none">
       <CaseStudies />
     </Section>
-    <Section background="white" marginTop="none" marginBottom="none">
+    <Section id="about-us" background="white" marginTop="none" marginBottom="none">
       <Board />
     </Section>
-    <Section background="darkBeige">
+    <Section id="contact" background="darkBeige">
       <Helmet>
         <script type="text/javascript" src="https://webforms.pipedrive.com/f/loader" />
       </Helmet>

@@ -29,6 +29,7 @@ const StyledCard = styled.div`
 
   ${style.media.tablet`
     flex-direction: row;
+    align-items: flex-start;
     width: calc(50% - (2 * ${style.spaces.tiny}));
     margin: ${style.spaces.tiny} ${style.spaces.small} ${style.spaces.tiny} 0;
     min-height: 10rem;
@@ -65,7 +66,7 @@ const StyledTextContent = styled.div`
 
 const ManagementCard = ({ img, name, title }) => (
   <StyledCard>
-    <StyledImg src={img} alt="" />
+    <StyledImg src={img} alt={name} />
     <StyledTextContent>
       <StyledParagraph textColour="white">{name}</StyledParagraph>
       <StyledRole textColour="grey">{title}</StyledRole>
