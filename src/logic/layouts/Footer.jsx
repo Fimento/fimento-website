@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import StyledParagraph from '../../styled/elements/StyledParagraph';
 import StyledImg from '../../styled/elements/StyledImg';
@@ -11,6 +10,8 @@ import StyledFlexBox from '../../styled/layouts/StyledFlexBox';
 import StyledWrappedColumn from '../../styled/layouts/StyledWrappedColumn';
 import StyledFooter, { StyledFooterContent } from '../../styled/layouts/StyledFooter';
 import StyledAnchor from '../../styled/elements/StyledAnchor';
+
+import SmoothScrollAnchor from '../elements/SmoothScrollAnchor';
 
 import fimentoInfo from '../../constants/fimentoInfo';
 
@@ -27,13 +28,10 @@ const Footer = () => (
       >
         <StyledFlexBox flexDirection="column">
           <StyledH3>Sitemap</StyledH3>
-          <StyledParagraph><StyledAnchor as={Link} to="/Fimento">Fimento</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/the-product">The product</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/the-product">Why us</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/the-product">Case studies</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/the-product">About us</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/blog">Blog</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/for-developers">For Developers</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#offer">The product</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#why-us">Why us</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#case-studies">Case studies</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#about-us">About us</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
         <StyledFlexBox flexDirection="column">
           <StyledH3>Contact us</StyledH3>
@@ -48,8 +46,8 @@ const Footer = () => (
         </StyledFlexBox>
         <StyledFlexBox flexDirection="column">
           <StyledH3>Follow us</StyledH3>
-          <StyledParagraph><StyledAnchor as={Link} to="/LinkedIn">LinkedIn</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={Link} to="/TeamTailor">TeamTailor</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor href="https://www.linkedin.com/company/fimento" target="_blank">LinkedIn</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor href="https://fimento.teamtailor.com" target="_blank">Career</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
       </StyledWrappedColumn>
     </StyledFooterContent>

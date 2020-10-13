@@ -15,7 +15,7 @@ const Header = () => (
         <StyledImg src={logo} alt="Fimento" />
         <StyledH3 fontWeight="regular">FIMENTO</StyledH3>
       </StyledFlexBox>
-      <StyledH3>Menu</StyledH3>
+      {/* <StyledH3>Menu</StyledH3> */}
     </StyledHeaderContent>
   </StyledHeader>
 );
