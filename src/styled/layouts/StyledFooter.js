@@ -15,14 +15,16 @@ export const StyledFooterContent = styled('div')`
 
   max-width: 60rem;
   width: 100%;
-  padding: 3rem 1.5rem 0rem;
+  padding: 3rem 1.5rem 2rem;
 
   ${StyledParagraph} {
     margin: ${style.spaces.tiny} 0 0;
     color: ${style.colours.secondary};
-    font-weight: ${style.fontWeights.regular};
+    font-weight: ${style.fontWeights.light};
+    font-size: ${style.fontSizes.tiny};
     ${collapseMarginMixin}
   }
+
   ${StyledImg} {
     max-height: 4rem;
   }
@@ -31,18 +33,17 @@ export const StyledFooterContent = styled('div')`
     color: ${style.colours.secondary};
   }
 
-  ${StyledWrappedColumn} > ${StyledFlexBox} {
-  }
-
   ${style.media.tablet`
     padding: 4rem 6rem 2rem;
 
-    ${StyledWrappedColumn} > ${StyledFlexBox} {
+    ${StyledImg} {
+      margin-bottom: 2rem;
     }
   `}
 
   ${style.media.laptop`
-    ${StyledWrappedColumn} > ${StyledFlexBox} {
+    ${StyledParagraph} {
+      font-size: ${style.fontSizes.smaller};
     }
   `}
 `;

@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import StyledFlexBox from './StyledFlexBox';
-import StyledParagraph from '../elements/StyledParagraph';
 
 import style from '../../constants/style';
 
@@ -27,13 +26,7 @@ const StyledWrappedColumn = styled(StyledFlexBox)`
       }
     `)}
   `}
-  ${StyledFlexBox} >  ${StyledParagraph} {
-    font-size: ${style.fontSizes.tiny};
 
-    ${style.media.laptop`
-      font-size: ${style.fontSizes.small};
-    `}
-  }
   & > *:first-child {
     order: 3
     margin-bottom: ${style.spaces.big};
