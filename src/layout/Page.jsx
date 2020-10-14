@@ -6,6 +6,7 @@ import Header from './Header';
 import StyledPage from '../styled/layouts/StyledPage';
 import GlobalStyle from '../styled/GlobalStyle';
 import Footer from '../logic/layouts/Footer';
+import CookieBanner from '../logic/layouts/CookieBanner';
 
 const Page = ({ children }) => (
   <StyledPage>
@@ -17,6 +18,7 @@ const Page = ({ children }) => (
     <Header />
     {children}
     <Footer />
+    <CookieBanner />
   </StyledPage>
 );
 
