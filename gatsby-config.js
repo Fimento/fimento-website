@@ -23,5 +23,15 @@ module.exports = {
         icon: 'src/assets/favicon.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-PN5CGF8',
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' },
+        dataLayerName: 'dataLayer',
+        routeChangeEventName: 'nuxtRoute',
+      },
+    },
   ],
 };
