@@ -22,7 +22,7 @@ export const StyledHeroContent = styled.div`
 
   ${StyledH1} {
     font-size: ${style.fontSizes.regular};
-    color: ${style.colours.beige};
+    color: ${style.colours.orange};
   }
 
   ${StyledParagraph} {
