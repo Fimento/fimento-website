@@ -28,13 +28,13 @@ const CookieParagraph = styled(StyledParagraph)`
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
-  const shouldShowBanner = cookies.get('acceptedCookies');
+  const hasAlreadyAcceptedCookies = cookies.get('acceptedCookies');
 
   useEffect(() => {
-    if (!shouldShowBanner) {
+    if (!hasAlreadyAcceptedCookies) {
       setShowBanner(true);
     }
-  }, [shouldShowBanner]);
+  }, [hasAlreadyAcceptedCookies]);
 
   const onCookieClose = useCallback(
     () => {
@@ -44,16 +44,12 @@ const CookieBanner = () => {
     [],
   );
 
-  return (
-    <>
-      {showBanner && (
-      <ContentContainer background={style.colours.darkBeige}>
-        <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
-        <CookieParagraph>To improve and analyze our site we use cookies</CookieParagraph>
-        <StyledButton primary="white" secondary="darkBeige" onClick={onCookieClose}>Allow</StyledButton>
-      </ContentContainer>
-      )}
-    </>
+  return showBanner && (
+    <ContentContainer background={style.colours.darkBeige}>
+      <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
+      <CookieParagraph>To improve and analyze our site we use cookies</CookieParagraph>
+      <StyledButton primary="white" secondary="darkBeige" onClick={onCookieClose}>Allow</StyledButton>
+    </ContentContainer>
   );
 };
 
