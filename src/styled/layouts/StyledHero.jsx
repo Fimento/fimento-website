@@ -128,7 +128,11 @@ export const StyledHeroContent = styled.div`
 
 const StyledHero = styled.section`
   display: flex;
+  margin-top: 4rem;
   background-color: ${style.colours.white};
+  ${style.media.laptop`
+    margin-top: 6rem;
+  `}
 `;
 
 export default StyledHero;
