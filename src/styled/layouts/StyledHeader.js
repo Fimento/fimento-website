@@ -3,7 +3,20 @@ import style from '../../constants/style';
 
 import StyledH3 from '../elements/StyledH3';
 import StyledImg from '../elements/StyledImg';
+import StyledAnchor from '../elements/StyledAnchor';
 import StyledFlexBox from './StyledFlexBox';
+
+export const StyledHomeLogo = styled(StyledAnchor)`
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: ${style.colours.primary};
+  &:hover {
+    text-decoration: none;
+  }
+
+`;
 
 export const StyledHeaderContent = styled.div`
   display: flex;
