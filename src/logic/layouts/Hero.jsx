@@ -1,6 +1,5 @@
 import React from 'react';
-
-import SmoothScrollAnchor from '../elements/SmoothScrollAnchor';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import honeyCombAnimation from '../../assets/honeycombs-animation.mp4';
 
@@ -20,7 +19,7 @@ const Hero = () => (
         advanced data analysis - for faster time to market,
         less manual processes and greater customer personalization.
       </StyledParagraph>
-      <StyledButton as={SmoothScrollAnchor} href="#contact">Contact us</StyledButton>
+      <StyledButton as={AnchorLink} to="/#contact">Contact us</StyledButton>
     </StyledHeroContent>
   </StyledHero>
 );

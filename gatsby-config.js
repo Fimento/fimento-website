@@ -4,6 +4,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
+    'gatsby-plugin-anchor-links',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

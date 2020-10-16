@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import style from '../../constants/style';
 
@@ -12,8 +13,6 @@ import StyledH2 from '../../styled/elements/StyledH2';
 import StyledFlexBox from '../../styled/layouts/StyledFlexBox';
 
 import polygon from '../../assets/polygon.png';
-
-import SmoothScrollAnchor from '../elements/SmoothScrollAnchor';
 
 const StyledWhyUs = styled.div`
   display: flex;
@@ -126,7 +125,7 @@ const WhyUs = () => (
             Sounds intriguing?
           </StyledSellParagraph>
         </StyledFlexBox>
-        <StyledButton as={SmoothScrollAnchor} primary="white" secondary="darkBeige" href="#contact">Contact us</StyledButton>
+        <StyledButton as={AnchorLink} primary="white" secondary="darkBeige" to="/#contact">Contact us</StyledButton>
       </StyledRightContent>
     </StyledWhyUsContent>
   </StyledWhyUs>
