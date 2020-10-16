@@ -11,4 +11,6 @@ collections:
       - { name: slug, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: coverImage, label: Cover Image, widget: image, required: false }
+      - { name: youtubeId, label: Youtube Video Id, widget: string, required: false }
       - { name: body, label: Body, widget: markdown }

@@ -48,7 +48,7 @@ StyledButton.propTypes = {
 
 StyledButton.defaultProps = {
   inverted: false,
-  primary: 'beige',
+  primary: 'orange',
   secondary: 'white',
 };
 

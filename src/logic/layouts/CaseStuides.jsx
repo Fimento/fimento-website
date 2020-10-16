@@ -98,7 +98,7 @@ const CaseStudies = () => (
         <StyledParagraph>
           Want more?
         </StyledParagraph>
-        <StyledButton as={SmoothScrollAnchor} primary="beige" secondary="white" href="#contact">Contact us</StyledButton>
+        <StyledButton as={SmoothScrollAnchor} href="#contact">Contact us</StyledButton>
       </StyledLeftContent>
     </StyledLeft>
     <StyledRightContent>

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
+import dayjs from 'dayjs';
 
 import Section from '../logic/layouts/Section';
 import Page from '../layout/Page';
@@ -26,6 +27,20 @@ const StyledPost = styled.div`
   -moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.07);
   box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.07);
 
+  &:hover {
+    animation: pulse 1.2s ease forwards;
+  }
+
+  @keyframes pulse {
+    0% {
+      background: ${style.colours.white};
+    }
+    100% {
+      background: ${style.colours.beige};
+    }
+  }
+
+
   ${style.media.tablet`
     width: calc(50% - (4 * ${style.spaces.small}));
     margin: ${style.spaces.small};
@@ -41,6 +56,7 @@ const StyledPost = styled.div`
     height:100%;
     top:0;
     left: 0;
+    color: ${style.colours.primary};
     text-decoration: none;
   }
 `;
@@ -58,7 +74,10 @@ const StyledPostsContainer = styled.div`
 
 `;
 const StyledTitleContent = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10rem 0 5rem;
 `;
 
 const Blog = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
@@ -79,8 +98,8 @@ const Blog = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
         {posts.map(({ node: { frontmatter: post } }) => (
           <StyledPost>
             <StyledAnchor as={Link} to={post.slug}>
-              <StyledParagraph>{post.date}</StyledParagraph>
-              <StyledParagraph>{post.title}</StyledParagraph>
+              <StyledParagraph fontWeight={style.fontWeights.bold}>{dayjs(post.date).format('YYYY-MM-DD')}</StyledParagraph>
+              <StyledParagraph fontWeight={style.fontWeights.bold}>{post.title}</StyledParagraph>
             </StyledAnchor>
           </StyledPost>
         ))}

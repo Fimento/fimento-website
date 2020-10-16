@@ -22,7 +22,7 @@ export const StyledHeroContent = styled.div`
 
   ${StyledH1} {
     font-size: ${style.fontSizes.regular};
-    color: ${style.colours.beige};
+    color: ${style.colours.orange};
   }
 
   ${StyledParagraph} {
@@ -128,7 +128,11 @@ export const StyledHeroContent = styled.div`
 
 const StyledHero = styled.section`
   display: flex;
+  margin-top: 4rem;
   background-color: ${style.colours.white};
+  ${style.media.laptop`
+    margin-top: 6rem;
+  `}
 `;
 
 export default StyledHero;

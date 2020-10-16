@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import StyledParagraph from '../../styled/elements/StyledParagraph';
 import StyledImg from '../../styled/elements/StyledImg';
@@ -32,6 +33,7 @@ const Footer = () => (
           <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#why-us">Why us</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#case-studies">Case studies</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#about-us">About us</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={Link} to="/blog">Blog</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
         <StyledFlexBox flexDirection="column">
           <StyledH3>Contact us</StyledH3>
