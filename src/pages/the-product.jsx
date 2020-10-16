@@ -10,12 +10,17 @@ import StyledParagraph from '../styled/elements/StyledParagraph';
 import modules from '../assets/modules.png';
 
 import StyledArticle from '../styled/layouts/StyledArticle';
+import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 
 const TheProduct = () => (
   <Page>
     <Section fullWidth marginBottom="none">
-      <StyledH1 textAlign="center">The product and modules explained</StyledH1>
-      <StyledImg src={modules} width="100%" marginTop="huge" />
+      <StyledFlexBox justifyContent="center" marginTop="huge">
+        <StyledH1 textAlign="center">The product and modules explained</StyledH1>
+      </StyledFlexBox>
+      <StyledFlexBox justifyContent="center" maxWidth="40rem" alignSelf="center">
+        <StyledImg src={modules} width="100%" marginTop="huge" />
+      </StyledFlexBox>
     </Section>
     <Section medium marginTop="none">
       <StyledH2>The Fimento modules, from Ledger to Onboarding</StyledH2>
