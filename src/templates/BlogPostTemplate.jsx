@@ -25,12 +25,12 @@ const StyledBlogPost = styled.div`
 const StyledYoutubePlayer = styled.div`
   display: flex;
   width: 100%;
-  height: 266px;
+  height: 16.625rem;
   justify-content: center;
 
   ${style.media.tablet`
     width: 100%;
-    height: 360px;
+    height: 22.5rem;
   `}
 
 `;
@@ -104,7 +104,6 @@ const BlogPostTemplate = ({ data: { markdownRemark: { frontmatter, html } } }) =
   <Page>
     {frontmatter.coverImage && (<StyledCoverImg src={frontmatter.coverImage} alt="Fimento" />)}
     <Section medium>
-      {console.log(html)}
       <StyledBlogPost>
         <StyledButton as={Link} to="/blog">Back to blog</StyledButton>
         <StyledH1>{frontmatter.title}</StyledH1>

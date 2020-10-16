@@ -77,7 +77,7 @@ const StyledTitleContent = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 10rem 0 5rem 0;
+  margin: 10rem 0 5rem;
 `;
 
 const Blog = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
