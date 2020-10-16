@@ -29,10 +29,7 @@ const Footer = () => (
       >
         <StyledFlexBox flexDirection="column">
           <StyledH3>Sitemap</StyledH3>
-          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#offer">The product</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#why-us">Why us</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#case-studies">Case studies</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={SmoothScrollAnchor} href="#about-us">About us</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor as={Link} to="/the-product">The product</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={Link} to="/blog">Blog</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
         <StyledFlexBox flexDirection="column">

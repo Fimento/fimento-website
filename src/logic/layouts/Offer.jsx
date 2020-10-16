@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import style from '../../constants/style';
 
@@ -9,8 +10,6 @@ import StyledButton from '../../styled/elements/StyledButton';
 import StyledH2 from '../../styled/elements/StyledH2';
 
 import honeyComb from '../../assets/honey-comb-img.png';
-
-import SmoothScrollAnchor from '../elements/SmoothScrollAnchor';
 
 const StyledOffer = styled.div`
   display: flex;
@@ -103,7 +102,7 @@ const Offer = () => (
         <StyledParagraph>
           Want to learn more?
         </StyledParagraph>
-        <StyledButton as={SmoothScrollAnchor} href="#contact">Contact us</StyledButton>
+        <StyledButton as={Link} to="/the-product">Read more</StyledButton>
       </StyledLeftContent>
     </StyledLeft>
     <StyledRightContent>
