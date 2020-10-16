@@ -10,7 +10,6 @@ import Page from '../layout/Page';
 import Section from '../logic/layouts/Section';
 
 import StyledButton from '../styled/elements/StyledButton';
-import StyledImg from '../styled/elements/StyledImg';
 import { DEFAULT_PARAGRAPH_FONT_SIZE } from '../styled/elements/StyledParagraph';
 import StyledH1 from '../styled/elements/StyledH1';
 import StyledH4 from '../styled/elements/StyledH4';
@@ -35,7 +34,11 @@ const StyledYoutubePlayer = styled.div`
 
 `;
 
-const StyledCoverImg = styled(StyledImg)`
+const StyledCoverImageSection = styled.section`
+  background-image: ${(props) => `url(${props.background})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
   width: 100%;
 `;
 
@@ -96,13 +99,14 @@ const StyledArticle = styled.div`
   }
 
   p > img {
-    width: 100%;
+    margin: auto;
+    display: block;
   }
 `;
 
 const BlogPostTemplate = ({ data: { markdownRemark: { frontmatter, html } } }) => (
   <Page>
-    {frontmatter.coverImage && (<StyledCoverImg src={frontmatter.coverImage} alt="Fimento" />)}
+    {frontmatter.coverImage && (<StyledCoverImageSection background={frontmatter.coverImage} />)}
     <Section medium>
       <StyledBlogPost>
         <StyledButton as={Link} to="/blog">Back to blog</StyledButton>
