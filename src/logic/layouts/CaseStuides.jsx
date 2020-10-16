@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import style from '../../constants/style';
 
@@ -10,8 +11,6 @@ import StyledH2 from '../../styled/elements/StyledH2';
 
 import digitalPayment from '../../assets/digital-payment.png';
 import digitalPaymentMobile from '../../assets/digital-payment-mobile.jpg';
-
-import SmoothScrollAnchor from '../elements/SmoothScrollAnchor';
 
 const StyledCaseStudies = styled.div`
   display: flex;
@@ -98,7 +97,7 @@ const CaseStudies = () => (
         <StyledParagraph>
           Want more?
         </StyledParagraph>
-        <StyledButton as={SmoothScrollAnchor} href="#contact">Contact us</StyledButton>
+        <StyledButton as={AnchorLink} to="/#contact">Contact us</StyledButton>
       </StyledLeftContent>
     </StyledLeft>
     <StyledRightContent>
