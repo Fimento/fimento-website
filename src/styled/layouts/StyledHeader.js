@@ -22,7 +22,6 @@ export const StyledHeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
   width: 100%;
   max-width: 70rem;
   margin-top: ${style.spaces.regular};
@@ -50,20 +49,15 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: center;
   z-index: ${style.zLevels.priority};
-  height: 4rem;
   padding: 0 1rem;
   position: absolute;
 
   background: transparent;
 
   ${style.media.tablet`
-    height: 6rem;
     padding: 0 2rem;
   `}
 
-  ${style.media.laptop`
-    height: 6rem;
-  `}
 `;
 
 export default StyledHeader;
