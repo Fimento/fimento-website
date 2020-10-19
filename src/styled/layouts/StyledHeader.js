@@ -23,7 +23,6 @@ export const StyledHeaderContent = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 70rem;
   margin-top: ${style.spaces.regular};
   ${StyledH3} {
     margin: 0;
@@ -51,11 +50,13 @@ const StyledHeader = styled.header`
   z-index: ${style.zLevels.priority};
   padding: 0 1rem;
   position: absolute;
+  width: calc(100% - 2 * 1rem);
 
   background: transparent;
 
   ${style.media.tablet`
     padding: 0 2rem;
+    width: calc(100% - 2 * 2rem);
   `}
 
 `;
