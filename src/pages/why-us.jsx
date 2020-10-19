@@ -18,7 +18,7 @@ const WhyUs = () => (
   <Page>
     <Section>
       <StyledFlexBox justifyContent="center" marginBottom="huge" marginTop="huge">
-        <StyledH1>Why banks and financial institutions should choose us</StyledH1>
+        <StyledH1 textAlign="center">Why banks and financial institutions should choose us</StyledH1>
       </StyledFlexBox>
       <StyledArticle>
         <StyledParagraph>
