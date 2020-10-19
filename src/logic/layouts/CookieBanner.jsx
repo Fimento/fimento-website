@@ -21,6 +21,7 @@ const ContentContainer = styled(StyledFlexBox)`
   flex-direction: row;
   background-color: ${style.colours.darkBeige};
   padding: ${style.spaces.big};
+  flex-wrap: wrap;
 `;
 
 const CookieParagraph = styled(StyledParagraph)`
@@ -48,7 +49,7 @@ const CookieBanner = () => {
 
   return showBanner && (
     <ContentContainer background={style.colours.darkBeige}>
-      <StyledFlexBox flexDirection="column" flexGrow="1">
+      <StyledFlexBox flexDirection="column" flexGrow="1" marginBottom="small">
         <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
         <CookieParagraph>To improve and analyze our site we use cookies. <StyledAnchor as={AnchorLink} to="/cookies">Read more</StyledAnchor></CookieParagraph>
       </StyledFlexBox>
