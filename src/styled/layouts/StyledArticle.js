@@ -14,7 +14,7 @@ const StyledArticle = styled.div`
     width: 100%;
     line-height: 1.5;
     font-weight: ${style.fontWeights.light};
-    text-align: inherit;
+    text-align: justify;
     font-style: normal;
     font-size: ${DEFAULT_PARAGRAPH_FONT_SIZE};
   }
