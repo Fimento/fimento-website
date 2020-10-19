@@ -2,9 +2,9 @@ import React from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import Section from '../logic/layouts/Section';
+import CatchPhrase from '../logic/layouts/CatchPhrase';
 import Page from '../layout/Page';
 
-import StyledH1 from '../styled/elements/StyledH1';
 import StyledH2 from '../styled/elements/StyledH2';
 import StyledParagraph from '../styled/elements/StyledParagraph';
 import StyledUl from '../styled/elements/StyledUl';
@@ -12,14 +12,11 @@ import StyledLi from '../styled/elements/StyledLi';
 import StyledAnchor from '../styled/elements/StyledAnchor';
 
 import StyledArticle from '../styled/layouts/StyledArticle';
-import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 
 const WhyUs = () => (
   <Page>
     <Section>
-      <StyledFlexBox justifyContent="center" marginBottom="huge" marginTop="huge">
-        <StyledH1 textAlign="center">Why banks and financial institutions should choose us</StyledH1>
-      </StyledFlexBox>
+      <CatchPhrase>Why banks and financial institutions should choose us</CatchPhrase>
       <StyledArticle>
         <StyledParagraph>
           At Fimento, we work with many financial institutions. It is an industry that is highly

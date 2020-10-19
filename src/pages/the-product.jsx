@@ -1,12 +1,13 @@
 import React from 'react';
 
 import Section from '../logic/layouts/Section';
+import CatchPhrase from '../logic/layouts/CatchPhrase';
 import Page from '../layout/Page';
 
-import StyledH1 from '../styled/elements/StyledH1';
 import StyledH2 from '../styled/elements/StyledH2';
 import StyledImg from '../styled/elements/StyledImg';
 import StyledParagraph from '../styled/elements/StyledParagraph';
+
 import modules from '../assets/modules.png';
 
 import StyledArticle from '../styled/layouts/StyledArticle';
@@ -15,11 +16,9 @@ import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 const TheProduct = () => (
   <Page>
     <Section fullWidth marginBottom="none">
-      <StyledFlexBox justifyContent="center" marginTop="huge">
-        <StyledH1 textAlign="center">The product and modules explained</StyledH1>
-      </StyledFlexBox>
+      <CatchPhrase>The product and modules explained</CatchPhrase>
       <StyledFlexBox justifyContent="center" maxWidth="40rem" alignSelf="center">
-        <StyledImg src={modules} width="100%" marginTop="huge" />
+        <StyledImg src={modules} width="100%" />
       </StyledFlexBox>
     </Section>
     <Section medium marginTop="none">
