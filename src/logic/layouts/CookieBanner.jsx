@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import cookies from 'js-cookie';
 import styled from 'styled-components';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import style from '../../constants/style';
 
@@ -9,14 +10,15 @@ import StyledFlexBox from '../../styled/layouts/StyledFlexBox';
 import StyledParagraph from '../../styled/elements/StyledParagraph';
 import StyledH4 from '../../styled/elements/StyledH4';
 import StyledButton from '../../styled/elements/StyledButton';
+import StyledAnchor from '../../styled/elements/StyledAnchor';
 
 const ContentContainer = styled(StyledFlexBox)`
-  width: 100%;
+  width: calc(100% - 2 * ${style.spaces.big});
   height: auto;
   position: fixed;
-  justify-content: center;
+  justify-content: space-between;
   bottom: 0;
-  flex-direction: column;
+  flex-direction: row;
   background-color: ${style.colours.darkBeige};
   padding: ${style.spaces.big};
 `;
@@ -46,8 +48,10 @@ const CookieBanner = () => {
 
   return showBanner && (
     <ContentContainer background={style.colours.darkBeige}>
-      <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
-      <CookieParagraph>To improve and analyze our site we use cookies</CookieParagraph>
+      <StyledFlexBox flexDirection="column" flexGrow="1">
+        <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
+        <CookieParagraph>To improve and analyze our site we use cookies. <StyledAnchor as={AnchorLink} to="/cookies">Read more</StyledAnchor></CookieParagraph>
+      </StyledFlexBox>
       <StyledButton primary="white" secondary="darkBeige" onClick={onCookieClose}>Allow</StyledButton>
     </ContentContainer>
   );
