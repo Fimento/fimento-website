@@ -4,7 +4,6 @@ import style from '../../constants/style';
 import StyledH3 from '../elements/StyledH3';
 import StyledImg from '../elements/StyledImg';
 import StyledAnchor from '../elements/StyledAnchor';
-import StyledFlexBox from './StyledFlexBox';
 
 export const StyledHomeLogo = styled(StyledAnchor)`
   width: 100%;
@@ -31,9 +30,6 @@ export const StyledHeaderContent = styled.div`
   ${StyledImg} {
     height: 3rem;
     margin-right: ${style.spaces.small};
-  }
-  ${StyledFlexBox} {
-    align-items: center;
   }
 
   ${style.media.tablet`

@@ -13,7 +13,7 @@ const Header = () => (
   <StyledHeader>
     <StyledHeaderContent>
       <StyledHomeLogo as={Link} to="/">
-        <StyledFlexBox>
+        <StyledFlexBox alignItems="center">
           <StyledImg src={logo} alt="Fimento" />
           <StyledH3 fontWeight="regular">FIMENTO</StyledH3>
         </StyledFlexBox>
