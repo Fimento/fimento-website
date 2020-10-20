@@ -4,7 +4,6 @@ import style from '../../constants/style';
 import StyledH3 from '../elements/StyledH3';
 import StyledImg from '../elements/StyledImg';
 import StyledAnchor from '../elements/StyledAnchor';
-import StyledFlexBox from './StyledFlexBox';
 
 export const StyledHomeLogo = styled(StyledAnchor)`
   width: 100%;
@@ -23,8 +22,6 @@ export const StyledHeaderContent = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 70rem;
-  margin-top: ${style.spaces.regular};
   ${StyledH3} {
     margin: 0;
   }
@@ -32,9 +29,6 @@ export const StyledHeaderContent = styled.div`
   ${StyledImg} {
     height: 3rem;
     margin-right: ${style.spaces.small};
-  }
-  ${StyledFlexBox} {
-    align-items: center;
   }
 
   ${style.media.tablet`
@@ -49,13 +43,15 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: center;
   z-index: ${style.zLevels.priority};
-  padding: 0 1rem;
-  position: absolute;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: calc(100% - 2 * 1rem);
 
-  background: transparent;
+  background: ${style.colours.white};
 
   ${style.media.tablet`
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    width: calc(100% - 2 * 2rem);
   `}
 
 `;
