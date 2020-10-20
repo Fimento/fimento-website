@@ -78,6 +78,7 @@ const Menu = () => {
       </StyledMenuIcon>
       <StyledMenuContainer open={open}>
         <StyledLinksContainer>
+          <StyledMenuLink as={AnchorLink} to="/">Home</StyledMenuLink>
           <StyledMenuLink as={AnchorLink} to="/the-product">The product</StyledMenuLink>
           <StyledMenuLink as={AnchorLink} to="/why-us">Why us</StyledMenuLink>
           <StyledMenuLink as={AnchorLink} to="/#case-studies">Case study</StyledMenuLink>
