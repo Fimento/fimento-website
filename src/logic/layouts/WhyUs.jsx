@@ -125,7 +125,7 @@ const WhyUs = () => (
             Sounds intriguing?
           </StyledSellParagraph>
         </StyledFlexBox>
-        <StyledButton as={AnchorLink} primary="white" secondary="darkBeige" to="/why-us">Contact us</StyledButton>
+        <StyledButton as={AnchorLink} primary="white" secondary="darkBeige" to="/why-us">Read more</StyledButton>
       </StyledRightContent>
     </StyledWhyUsContent>
   </StyledWhyUs>
