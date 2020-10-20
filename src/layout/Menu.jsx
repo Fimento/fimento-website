@@ -5,11 +5,16 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import style from '../constants/style';
 
 import StyledAnchor from '../styled/elements/StyledAnchor';
-
 import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 
-const StyledBurgerIcon = styled.div`
+import Icon from '../logic/elements/Icon';
+
+import CrossIcon from '../assets/cross.svg';
+import HamburgerIcon from '../assets/hamburger.svg';
+
+const StyledMenuIcon = styled.div`
   cursor: pointer;
+  z-index: ${style.zLevels.raised};
 `;
 
 const StyledMenuContainer = styled.div`
@@ -18,7 +23,6 @@ const StyledMenuContainer = styled.div`
   right: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1;
 
   background: rgba(242,203,166,1);
 
@@ -66,21 +70,18 @@ const Menu = () => {
   );
 
   return (
-    <StyledBurgerIcon
-      onClick={onClick}
-    >
-      {open ? (
-        <StyledMenuContainer open={open}>
-          <StyledLinksContainer>
-            <StyledMenuLink as={AnchorLink} to="/the-product">The product</StyledMenuLink>
-            <StyledMenuLink as={AnchorLink} to="/why-us">Why us</StyledMenuLink>
-            <StyledMenuLink as={AnchorLink} to="/#case-studies">Case tudy</StyledMenuLink>
-            <StyledMenuLink as={AnchorLink} to="/about-us">About us</StyledMenuLink>
-            <StyledMenuLink as={AnchorLink} to="/blog">Blog</StyledMenuLink>
-          </StyledLinksContainer>
-        </StyledMenuContainer>
-      ) : 'Menu'}
-    </StyledBurgerIcon>
+    <>
+      <StyledMenuIcon onClick={onClick}>{open ? <Icon iconWidth="2rem" icon={CrossIcon} /> : <Icon iconWidth="2rem" icon={HamburgerIcon} />}</StyledMenuIcon>
+      <StyledMenuContainer open={open}>
+        <StyledLinksContainer>
+          <StyledMenuLink as={AnchorLink} to="/the-product">The product</StyledMenuLink>
+          <StyledMenuLink as={AnchorLink} to="/why-us">Why us</StyledMenuLink>
+          <StyledMenuLink as={AnchorLink} to="/#case-studies">Case study</StyledMenuLink>
+          <StyledMenuLink as={AnchorLink} to="/about-us">About us</StyledMenuLink>
+          <StyledMenuLink as={AnchorLink} to="/blog">Blog</StyledMenuLink>
+        </StyledLinksContainer>
+      </StyledMenuContainer>
+    </>
   );
 };
 
