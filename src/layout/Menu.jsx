@@ -5,12 +5,12 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import style from '../constants/style';
 
 import StyledAnchor from '../styled/elements/StyledAnchor';
+import StyledH3 from '../styled/elements/StyledH3';
 import StyledFlexBox from '../styled/layouts/StyledFlexBox';
 
 import Icon from '../logic/elements/Icon';
 
 import CrossIcon from '../assets/cross.svg';
-import HamburgerIcon from '../assets/hamburger.svg';
 
 const StyledMenuIcon = styled.div`
   cursor: pointer;
@@ -71,7 +71,11 @@ const Menu = () => {
 
   return (
     <>
-      <StyledMenuIcon onClick={onClick}>{open ? <Icon iconWidth="2rem" icon={CrossIcon} /> : <Icon iconWidth="2rem" icon={HamburgerIcon} />}</StyledMenuIcon>
+      <StyledMenuIcon onClick={onClick}>
+        {open
+          ? <Icon iconWidth="2rem" icon={CrossIcon} />
+          : <StyledH3>Menu</StyledH3>}
+      </StyledMenuIcon>
       <StyledMenuContainer open={open}>
         <StyledLinksContainer>
           <StyledMenuLink as={AnchorLink} to="/the-product">The product</StyledMenuLink>
