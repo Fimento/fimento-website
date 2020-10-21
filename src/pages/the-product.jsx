@@ -17,7 +17,7 @@ const TheProduct = () => (
   <Page>
     <Section fullWidth marginBottom="none">
       <CatchPhrase>The product and modules explained</CatchPhrase>
-      <StyledFlexBox justifyContent="center" maxWidth="40rem" alignSelf="center">
+      <StyledFlexBox alignItems="flex-start" justifyContent="center" maxWidth="40rem" alignSelf="center">
         <StyledImg src={modules} width="100%" />
       </StyledFlexBox>
     </Section>
