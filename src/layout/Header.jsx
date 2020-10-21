@@ -11,18 +11,28 @@ import StyledH3 from '../styled/elements/StyledH3';
 
 import Menu from './Menu';
 
-const Header = () => (
-  <StyledHeader>
-    <StyledHeaderContent>
-      <StyledHomeLogo as={Link} to="/">
-        <StyledFlexBox alignItems="center">
-          <StyledImg src={logo} alt="Fimento" />
-          <StyledH3 fontWeight="regular">FIMENTO</StyledH3>
-        </StyledFlexBox>
-      </StyledHomeLogo>
-      <Menu />
-    </StyledHeaderContent>
-  </StyledHeader>
-);
+import useScrollState from '../utils/useScrollState';
+
+const Header = () => {
+  const { isOnTop, isScrollingDown, isScrollingUp } = useScrollState();
+
+  return (
+    <StyledHeader
+      isOnTop={isOnTop}
+      isScrollingDown={isScrollingDown}
+      isScrollingUp={isScrollingUp}
+    >
+      <StyledHeaderContent>
+        <StyledHomeLogo as={Link} to="/">
+          <StyledFlexBox alignItems="center">
+            <StyledImg src={logo} alt="Fimento" />
+            <StyledH3 fontWeight="regular">FIMENTO</StyledH3>
+          </StyledFlexBox>
+        </StyledHomeLogo>
+        <Menu />
+      </StyledHeaderContent>
+    </StyledHeader>
+  );
+};
 
 export default Header;

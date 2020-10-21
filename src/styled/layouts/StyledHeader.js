@@ -47,7 +47,31 @@ const StyledHeader = styled.header`
   position: fixed;
   width: calc(100% - 2 * 1rem);
 
-  background: ${style.colours.white};
+  transition: all 0.2s ease-in-out 0s;
+
+  ${({ isOnTop, isScrollingDown, isScrollingUp }) => {
+    if (isOnTop) {
+      return `
+        background: transparent;
+      `;
+    }
+
+    if (isScrollingDown) {
+      return `
+        transform: translateY(-100%);
+      `;
+    }
+
+    if (isScrollingUp) {
+      return `
+        background: ${style.colours.white};
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        transform: translateY(0%);
+      `;
+    }
+
+    return '';
+  }}
 
   ${style.media.tablet`
     padding: 1rem 2rem;
