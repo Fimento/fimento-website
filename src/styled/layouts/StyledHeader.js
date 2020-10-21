@@ -6,15 +6,9 @@ import StyledImg from '../elements/StyledImg';
 import StyledAnchor from '../elements/StyledAnchor';
 
 export const StyledHomeLogo = styled(StyledAnchor)`
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: ${style.colours.primary};
   &:hover {
     text-decoration: none;
   }
-
 `;
 
 export const StyledHeaderContent = styled.div`
