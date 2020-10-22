@@ -15,7 +15,7 @@ import StyledArticle from '../styled/layouts/StyledArticle';
 
 const WhyUs = () => (
   <Page>
-    <Section>
+    <Section medium>
       <CatchPhrase>Why banks and financial institutions should choose us</CatchPhrase>
       <StyledArticle>
         <StyledParagraph>
