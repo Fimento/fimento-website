@@ -1,21 +1,12 @@
-import React, { useCallback, useState } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import PropTypes from 'prop-types';
 
 import style from '../constants/style';
 
 import StyledAnchor from '../styled/elements/StyledAnchor';
-import StyledH3 from '../styled/elements/StyledH3';
 import StyledFlexBox from '../styled/layouts/StyledFlexBox';
-
-import Icon from '../logic/elements/Icon';
-
-import CrossIcon from '../assets/cross.svg';
-
-const StyledMenuIcon = styled.div`
-  cursor: pointer;
-  z-index: ${style.zLevels.raised};
-`;
 
 const StyledMenuContainer = styled.div`
   position: fixed;
@@ -24,6 +15,11 @@ const StyledMenuContainer = styled.div`
   width: 100%;
   height: 100vh;
 
+  ${style.media.tablet`
+  width: 50%;
+  `}
+
+  z-index: ${style.zLevels.raised};
   background: rgba(242,203,166,1);
 
   display: flex;
@@ -33,10 +29,6 @@ const StyledMenuContainer = styled.div`
 
   transform: ${({ open }) => (open ? 'translateX(0%)' : 'translateX(200%)')};
   transition: all ease 250ms;
-
-  ${style.media.tablet`
-    width: 50%;
-  `}
 `;
 
 const StyledMenuLink = styled(StyledAnchor)`
@@ -60,34 +52,34 @@ const StyledLinksContainer = styled(StyledFlexBox)`
   `}
 `;
 
-const Menu = () => {
-  const [open, setOpen] = useState(false);
-  const onClick = useCallback(
-    (e) => {
-      e.preventDefault();
-      setOpen(!open);
-    }, [open],
-  );
+const Menu = ({ open, button }) => {
+  useEffect(() => {
+    if (open) {
+      global.document.body.style.overflow = 'hidden';
+      global.document.body.style.height = '100%';
+    } else {
+      global.document.body.style.cssText = '';
+    }
+  });
 
   return (
-    <>
-      <StyledMenuIcon onClick={onClick}>
-        {open
-          ? <Icon iconWidth="2rem" icon={CrossIcon} />
-          : <StyledH3>Menu</StyledH3>}
-      </StyledMenuIcon>
-      <StyledMenuContainer open={open}>
-        <StyledLinksContainer>
-          <StyledMenuLink as={AnchorLink} to="/">Home</StyledMenuLink>
-          <StyledMenuLink as={AnchorLink} to="/the-product">The product</StyledMenuLink>
-          <StyledMenuLink as={AnchorLink} to="/why-us">Why us</StyledMenuLink>
-          <StyledMenuLink as={AnchorLink} to="/#case-studies">Case study</StyledMenuLink>
-          <StyledMenuLink as={AnchorLink} to="/about-us">About us</StyledMenuLink>
-          <StyledMenuLink as={AnchorLink} to="/blog">Blog</StyledMenuLink>
-        </StyledLinksContainer>
-      </StyledMenuContainer>
-    </>
+    <StyledMenuContainer open={open}>
+      {button}
+      <StyledLinksContainer>
+        <StyledMenuLink as={AnchorLink} to="/">Home</StyledMenuLink>
+        <StyledMenuLink as={AnchorLink} to="/the-product">The product</StyledMenuLink>
+        <StyledMenuLink as={AnchorLink} to="/why-us">Why us</StyledMenuLink>
+        <StyledMenuLink as={AnchorLink} to="/#case-studies">Case study</StyledMenuLink>
+        <StyledMenuLink as={AnchorLink} to="/about-us">About us</StyledMenuLink>
+        <StyledMenuLink as={AnchorLink} to="/blog">Blog</StyledMenuLink>
+      </StyledLinksContainer>
+    </StyledMenuContainer>
   );
+};
+
+Menu.propTypes = {
+  open: PropTypes.bool.isRequired,
+  button: PropTypes.node.isRequired,
 };
 
 export default Menu;
