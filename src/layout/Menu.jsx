@@ -60,7 +60,7 @@ const Menu = ({ open, button }) => {
     } else {
       global.document.body.style.cssText = '';
     }
-  });
+  }, [open]);
 
   return (
     <StyledMenuContainer open={open}>
