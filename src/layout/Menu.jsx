@@ -72,6 +72,7 @@ const Menu = ({ open, button }) => {
         <StyledMenuLink as={AnchorLink} to="/#case-studies">Case study</StyledMenuLink>
         <StyledMenuLink as={AnchorLink} to="/about-us">About us</StyledMenuLink>
         <StyledMenuLink as={AnchorLink} to="/blog">Blog</StyledMenuLink>
+        <StyledMenuLink target="_blank" href="https://fimento.teamtailor.com">Career</StyledMenuLink>
       </StyledLinksContainer>
     </StyledMenuContainer>
   );
