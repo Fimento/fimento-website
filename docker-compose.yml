@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  gatsby:
+    build: ./
+    command: npm run dev
+    environment:
+      TARGET_ENV: "local"
+    volumes:
+      - ./:/code:delegated
+      - /code/node_modules/
+    ports:
+      - "8000:8000"
