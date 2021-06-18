@@ -30,7 +30,6 @@ const Footer = () => (
           <StyledParagraph><StyledAnchor as={AnchorLink} to="/the-product">The product</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={AnchorLink} to="/why-us">Why us</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={AnchorLink} to="/#case-studies">Case studies</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor as={AnchorLink} to="/about-us">About us</StyledAnchor></StyledParagraph>
           <StyledParagraph><StyledAnchor as={AnchorLink} to="/blog">Blog</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
         <StyledFlexBox flexDirection="column">

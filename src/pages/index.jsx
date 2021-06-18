@@ -12,7 +12,6 @@ import StyledIFrame from '../styled/elements/StyledIFrame';
 import StyledTree from '../styled/elements/StyledTree';
 
 import AsideLayout, { StyledAside } from '../logic/layouts/AsideLayout';
-import Board from '../logic/layouts/Board';
 import Quote from '../logic/layouts/Quote';
 import WhyUs from '../logic/layouts/WhyUs';
 import CaseStudies from '../logic/layouts/CaseStuides';
@@ -32,9 +31,6 @@ const Home = () => (
     </Section>
     <Section id="case-studies" background="white" marginTop="none" marginBottom="none">
       <CaseStudies />
-    </Section>
-    <Section id="about-us" background="white" marginTop="none" marginBottom="none">
-      <Board />
     </Section>
     <Section id="contact" background="darkBeige">
       <Helmet>
