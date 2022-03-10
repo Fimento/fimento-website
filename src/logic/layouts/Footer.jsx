@@ -46,7 +46,7 @@ const Footer = () => (
         <StyledFlexBox flexDirection="column">
           <StyledH3>Follow us</StyledH3>
           <StyledParagraph><StyledAnchor href="https://www.linkedin.com/company/fimento" target="_blank">LinkedIn</StyledAnchor></StyledParagraph>
-          <StyledParagraph><StyledAnchor href="https://fimento.teamtailor.com" target="_blank">Career</StyledAnchor></StyledParagraph>
+          <StyledParagraph><StyledAnchor href="https://www.linkedin.com/company/fimento/jobs/" target="_blank">Career</StyledAnchor></StyledParagraph>
         </StyledFlexBox>
       </StyledWrappedColumn>
     </StyledFooterContent>
