@@ -53,7 +53,7 @@ const CookieBanner = () => {
         <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
         <CookieParagraph>To improve and analyze our site we use cookies. <StyledAnchor as={AnchorLink} to="/cookies">Read more</StyledAnchor></CookieParagraph>
       </StyledFlexBox>
-      <StyledButton primary="white" secondary="lightBeige" onClick={onCookieClose}>Allow</StyledButton>
+      <StyledButton onClick={onCookieClose}>Allow</StyledButton>
     </ContentContainer>
   );
 };
