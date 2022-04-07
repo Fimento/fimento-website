@@ -86,7 +86,7 @@ const Offer = () => (
   <StyledOffer>
     <StyledLeft>
       <StyledLeftContent>
-        <StyledH2 textColour="orange">Financial technology adapted your needs</StyledH2>
+        <StyledH2 textColour="orange">Financial technology adapted to your needs</StyledH2>
         <StyledParagraph>
           Our cloud-based ecosystem consists of financial modules that enable us to create tailor-made solutions that are adapted to your company and your clients business needs. Fimentos’ technical solutions are used in a wide range of business areas:
         </StyledParagraph>
