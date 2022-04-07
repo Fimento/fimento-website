@@ -6,7 +6,7 @@ import Section from '../logic/layouts/Section';
 
 import Hero from '../logic/layouts/Hero';
 
-import tree from '../assets/tree.png';
+import customerSuccess from '../assets/honeycomb-customer-success.svg';
 
 import StyledIFrame from '../styled/elements/StyledIFrame';
 import StyledTree from '../styled/elements/StyledTree';
@@ -26,13 +26,13 @@ const Home = () => (
     <Section id="offer" background="white" marginTop="none" marginBottom="none">
       <Offer />
     </Section>
-    <Section id="why-us" background="darkBeige" marginTop="none" marginBottom="none">
+    <Section id="why-us" background="lightBeige" marginTop="none" marginBottom="none">
       <WhyUs />
     </Section>
     <Section id="case-studies" background="white" marginTop="none" marginBottom="none">
       <CaseStudies />
     </Section>
-    <Section id="contact" background="darkBeige">
+    <Section id="contact" background="lightBeige">
       <Helmet>
         <script type="text/javascript" src="https://webforms.pipedrive.com/f/loader" />
       </Helmet>
@@ -45,7 +45,7 @@ const Home = () => (
             />
           </StyledIFrame>
         </StyledAside>
-        <StyledTree src={tree} alt="" />
+        <StyledTree src={customerSuccess} alt="" />
       </AsideLayout>
     </Section>
   </Page>

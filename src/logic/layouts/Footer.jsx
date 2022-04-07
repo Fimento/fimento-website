@@ -5,7 +5,7 @@ import StyledParagraph from '../../styled/elements/StyledParagraph';
 import StyledImg from '../../styled/elements/StyledImg';
 import StyledH3 from '../../styled/elements/StyledH3';
 
-import fimentoLogo from '../../assets/fimento_logo_name.png';
+import fimentoLogo from '../../assets/logo-black.png';
 
 import StyledFlexBox from '../../styled/layouts/StyledFlexBox';
 import StyledWrappedColumn from '../../styled/layouts/StyledWrappedColumn';

@@ -28,7 +28,6 @@ const StyledQuoteContent = styled.div`
     font-style: italic;
     font-size: ${style.fontSizes.smaller}
     font-weight: ${style.fontWeights.regular};
-    color: ${style.colours.white};
   }
   & > *:nth-child(3) {
     margin: 0;
@@ -94,11 +93,11 @@ const sourceUrl = 'https://www.mckinsey.com/industries/financial-services/our-in
 const Quote = () => (
   <StyledQuoteLayout>
     <StyledQuoteContent>
-      <StyledParagraph>
-        &quot;Soon, every company will be a finance company&quot;*
+      <StyledParagraph textColour="darkOrange">
+        &ldquo;Soon, every company will be a finance company&rdquo;
       </StyledParagraph>
       <StyledParagraph>- McKinsey &amp; Company</StyledParagraph>
-      <StyledParagraph><StyledAnchor href={sourceUrl} target="_blank">*What the embedded-finance and banking-as-a-service trends mean for financial services</StyledAnchor></StyledParagraph>
+      <StyledParagraph><StyledAnchor href={sourceUrl} target="_blank">What the embedded-finance and banking-as-a-service trends mean for financial services</StyledAnchor></StyledParagraph>
     </StyledQuoteContent>
     <StyledProofContent>
       <StyledProof maxWidth="100%" borderLeftColour="orange">
