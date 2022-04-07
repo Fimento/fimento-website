@@ -8,6 +8,8 @@ import StyledParagraph from '../../styled/elements/StyledParagraph';
 import StyledImg from '../../styled/elements/StyledImg';
 import StyledButton from '../../styled/elements/StyledButton';
 import StyledH2 from '../../styled/elements/StyledH2';
+import StyledUl from '../../styled/elements/StyledUl';
+import StyledLi from '../../styled/elements/StyledLi';
 
 import honeyComb from '../../assets/honey-comb-img.png';
 
@@ -84,21 +86,17 @@ const Offer = () => (
   <StyledOffer>
     <StyledLeft>
       <StyledLeftContent>
-        <StyledH2>What we can offer you</StyledH2>
+        <StyledH2>What we can offer</StyledH2>
         <StyledParagraph>
-          The Fimento ecosystem is fully API-based and
-          consists of several cloud based financial
-          services that be combined or, in some
-          cases, used individually. From onboarding
-          and KYC – to ledger/cash management
-          – to AI based data analysis, and beyond.
+          The Fimento ecosystem is fully API-based and consists of several cloud based financial services that are used combined or individually to suit client needs.
         </StyledParagraph>
-        <StyledParagraph>
-          What you get is a flexible, customizable
-          fintech solution that is tailor made to your
-          specific needs and that can be adapted
-          and scaled over time.
-        </StyledParagraph>
+        <StyledUl>
+          <StyledLi>Marketplaces &amp; platforms</StyledLi>
+          <StyledLi>Product financing</StyledLi>
+          <StyledLi>Contract mortgaging</StyledLi>
+          <StyledLi>Charging solutions for BRF/B2B</StyledLi>
+          <StyledLi>E-invoicing and accounts payable</StyledLi>
+        </StyledUl>
         <StyledParagraph>
           Want to learn more?
         </StyledParagraph>

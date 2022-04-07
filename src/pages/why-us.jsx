@@ -16,18 +16,8 @@ import StyledArticle from '../styled/layouts/StyledArticle';
 const WhyUs = () => (
   <Page>
     <Section medium>
-      <CatchPhrase>Why banks and financial institutions should choose us</CatchPhrase>
+      <CatchPhrase>Why choose us</CatchPhrase>
       <StyledArticle>
-        <StyledParagraph>
-          At Fimento, we work with many financial institutions. It is an industry that is highly
-          regulated. We go to great length, not only to comply with existing rules and
-          regulations but we also strive to be best in class. When we learn something, we will
-          make sure we deploy those learnings across all our clients.
-        </StyledParagraph>
-        <StyledParagraph>
-          In terms of data security, we have stringent checks and balances to ensure we comply
-          with regulation for data collection and storage.
-        </StyledParagraph>
         <StyledH2>A scalable cloud service</StyledH2>
         <StyledParagraph>
           The modular architecture of the platform is like building with Lego blocks. You can

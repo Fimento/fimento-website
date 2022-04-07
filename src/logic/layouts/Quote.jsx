@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import style from '../../constants/style';
+import StyledAnchor from '../../styled/elements/StyledAnchor';
 
 import StyledParagraph from '../../styled/elements/StyledParagraph';
 import StyledSpan from '../../styled/elements/StyledSpan';
@@ -88,16 +89,16 @@ const StyledProof = styled(StyledFlexBox)`
   `}
 `;
 
+const sourceUrl = 'https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/what-the-embedded-finance-and-banking-as-a-service-trends-mean-for-financial-services';
+
 const Quote = () => (
   <StyledQuoteLayout>
     <StyledQuoteContent>
       <StyledParagraph>
-        &quot;In the not too distant future,
-        nearly every company will be a financial
-        services company.&quot;
+        &quot;Soon, every company will be a finance company&quot;*
       </StyledParagraph>
-      <StyledParagraph>- Angela Strange,</StyledParagraph>
-      <StyledParagraph>General Partner Andreessen Horowitz</StyledParagraph>
+      <StyledParagraph>- McKinsey &amp; Company</StyledParagraph>
+      <StyledParagraph><StyledAnchor href={sourceUrl} target="_blank">*What the embedded-finance and banking-as-a-service trends mean for financial services</StyledAnchor></StyledParagraph>
     </StyledQuoteContent>
     <StyledProofContent>
       <StyledProof maxWidth="100%" borderLeftColour="orange">
