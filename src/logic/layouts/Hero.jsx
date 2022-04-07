@@ -13,7 +13,7 @@ const Hero = () => (
   <StyledHero>
     <StyledHeroContent>
       <StyledVideo autoPlay loop muted playsInline src={honeyCombAnimation} />
-      <StyledH1>Cloud banking of the future</StyledH1>
+      <StyledH1>Financing of the future</StyledH1>
       <StyledParagraph>
         Providing next-generation financial services and
         advanced data analysis - for faster time to market,
