@@ -19,7 +19,7 @@ const ContentContainer = styled(StyledFlexBox)`
   justify-content: space-between;
   bottom: 0;
   flex-direction: row;
-  background-color: ${style.colours.darkBeige};
+  background-color: ${style.colours.lightBeige};
   padding: ${style.spaces.big};
   flex-wrap: wrap;
 `;
@@ -48,12 +48,12 @@ const CookieBanner = () => {
   );
 
   return showBanner && (
-    <ContentContainer background={style.colours.darkBeige}>
+    <ContentContainer background={style.colours.lightBeige}>
       <StyledFlexBox flexDirection="column" flexGrow="1" marginBottom="small">
         <StyledH4 fontWeight={style.fontWeights.bold}>We use cookies</StyledH4>
         <CookieParagraph>To improve and analyze our site we use cookies. <StyledAnchor as={AnchorLink} to="/cookies">Read more</StyledAnchor></CookieParagraph>
       </StyledFlexBox>
-      <StyledButton primary="white" secondary="darkBeige" onClick={onCookieClose}>Allow</StyledButton>
+      <StyledButton onClick={onCookieClose}>Allow</StyledButton>
     </ContentContainer>
   );
 };

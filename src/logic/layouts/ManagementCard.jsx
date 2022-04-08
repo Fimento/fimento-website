@@ -14,7 +14,7 @@ const StyledRole = styled(StyledParagraph)`
 const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${style.colours.darkBeige};
+  background: ${style.colours.lightBeige};
   margin: ${style.spaces.tinier};
   width: calc(50% - (2 * ${style.spaces.tinier}));
   min-height: 17rem;

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import StyledH1 from '../elements/StyledH1';
 import StyledParagraph from '../elements/StyledParagraph';
 import StyledImg from '../elements/StyledImg';
-import StyledVideo from '../elements/StyledVideo';
 import StyledButton from '../elements/StyledButton';
 
 import style from '../../constants/style';
@@ -35,10 +34,6 @@ export const StyledHeroContent = styled.div`
     width: 100%;
   }
 
-  ${StyledVideo} {
-    width: 100%;
-  }
-
   ${StyledButton} {
     align-self: start;
   }
@@ -59,14 +54,6 @@ export const StyledHeroContent = styled.div`
     }
 
     ${StyledImg} {
-      height: 20.8rem;
-      width: auto;
-      position: absolute;
-      bottom: 0;
-      right: 1rem;
-    }
-
-    ${StyledVideo} {
       height: 20.8rem;
       width: auto;
       position: absolute;
@@ -95,9 +82,6 @@ export const StyledHeroContent = styled.div`
     ${StyledImg} {
       height: 31.5rem;
     }
-    ${StyledVideo} {
-      height: 31.5rem;
-    }
   `}
 
   ${style.media.desktop`
@@ -116,10 +100,6 @@ export const StyledHeroContent = styled.div`
     }
 
     ${StyledImg} {
-      height: 34rem;
-      right: -1rem;
-    }
-    ${StyledVideo} {
       height: 34rem;
       right: -1rem;
     }

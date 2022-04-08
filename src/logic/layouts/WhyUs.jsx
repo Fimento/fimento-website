@@ -67,20 +67,12 @@ const StyledTitle = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: ${style.spaces.regular};
-
-  ${StyledH2} {
-    color: ${style.colours.white};
-  }
-`;
-
-const StyledSellParagraph = styled(StyledParagraph)`
-  margin: ${style.spaces.small} 0 ${style.spaces.regular} 0;
 `;
 
 const WhyUs = () => (
   <StyledWhyUs>
     <StyledTitle>
-      <StyledH2>Why Fimento?</StyledH2>
+      <StyledH2 textColour="orange">Why Fimento?</StyledH2>
     </StyledTitle>
     <StyledWhyUsContent>
       <StyledLeftContent>
@@ -121,11 +113,8 @@ const WhyUs = () => (
             <StyledIcon src={polygon} alt="" />
             <StyledParagraph>Greater customer personalization</StyledParagraph>
           </StyledWhyItem>
-          <StyledSellParagraph>
-            Sounds intriguing?
-          </StyledSellParagraph>
         </StyledFlexBox>
-        <StyledButton as={AnchorLink} primary="white" secondary="darkBeige" to="/why-us">Read more</StyledButton>
+        <StyledButton as={AnchorLink} to="/why-us">Read more</StyledButton>
       </StyledRightContent>
     </StyledWhyUsContent>
   </StyledWhyUs>

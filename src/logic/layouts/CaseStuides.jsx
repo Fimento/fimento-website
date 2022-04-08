@@ -32,7 +32,7 @@ const StyledLeft = styled.div`
   ${style.media.laptop`
     width: 50%;
     height: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: start;
   `}
 `;
@@ -87,15 +87,12 @@ const CaseStudies = () => (
   <StyledCaseStudies>
     <StyledLeft>
       <StyledLeftContent>
-        <StyledH2>Case studies</StyledH2>
+        <StyledH2 textColour="orange">Case studies</StyledH2>
         <StyledParagraph>
           We partner with our clients to understand
           their business and their challenges. Our
           focus is on finding and developing
           solutions that adds true value.
-        </StyledParagraph>
-        <StyledParagraph>
-          Want more?
         </StyledParagraph>
         <StyledButton as={AnchorLink} to="/#contact">Contact us</StyledButton>
       </StyledLeftContent>

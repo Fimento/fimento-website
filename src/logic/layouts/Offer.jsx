@@ -11,7 +11,7 @@ import StyledH2 from '../../styled/elements/StyledH2';
 import StyledUl from '../../styled/elements/StyledUl';
 import StyledLi from '../../styled/elements/StyledLi';
 
-import honeyComb from '../../assets/honey-comb-img.png';
+import honeyComb from '../../assets/honeycomb.svg';
 
 const StyledOffer = styled.div`
   display: flex;
@@ -86,9 +86,9 @@ const Offer = () => (
   <StyledOffer>
     <StyledLeft>
       <StyledLeftContent>
-        <StyledH2>What we can offer</StyledH2>
+        <StyledH2 textColour="orange">Financial technology adapted to your needs</StyledH2>
         <StyledParagraph>
-          The Fimento ecosystem is fully API-based and consists of several cloud based financial services that are used combined or individually to suit client needs.
+          Our cloud-based ecosystem consists of financial modules that enable us to create tailor-made solutions that are adapted to your company and your clients business needs. Fimentos’ technical solutions are used in a wide range of business areas:
         </StyledParagraph>
         <StyledUl>
           <StyledLi>Marketplaces &amp; platforms</StyledLi>
@@ -98,7 +98,7 @@ const Offer = () => (
           <StyledLi>E-invoicing and accounts payable</StyledLi>
         </StyledUl>
         <StyledParagraph>
-          Want to learn more?
+          We can deliver our solution through a fully integrated API or web-based portal.
         </StyledParagraph>
         <StyledButton as={Link} to="/the-product">Read more</StyledButton>
       </StyledLeftContent>

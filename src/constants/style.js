@@ -5,10 +5,10 @@ const colours = {
   secondary: '#707070',
   white: '#FFFFFF',
   beige: '#F3CCA7',
-  lightBeige: '#D9C8A8',
-  darkBeige: '#DAC9BD',
+  lightBeige: '#F2F0ED',
   grey: '#8E8986',
-  orange: '#BE560E',
+  orange: '#D58E48',
+  darkOrange: '#A3471F',
   error: '#D65C47',
   lightError: '#DF806F',
 };
