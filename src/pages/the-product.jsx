@@ -40,8 +40,8 @@ const TheProduct = () => (
         </StyledParagraph>
         <StyledH2>Accounts</StyledH2>
         <StyledParagraph>
-          The accounts module helps you keep track of your customers’ accounts and
-          transactions. It registers all the transactions happening in any of your customers’
+          The accounts module helps you keep track of your customers&rsquo; accounts and
+          transactions. It registers all the transactions happening in any of your customers&rsquo;
           accounts and calculates interest based on their cash flow. This approach has been
           chosen to maximize flexibility while providing a robust base for the ledger system.
         </StyledParagraph>
@@ -61,7 +61,7 @@ const TheProduct = () => (
         <StyledH2>Backend</StyledH2>
         <StyledParagraph>
           The backend application enables you to visualize and manage all the services you
-          have in the MoTech ecosystem. This is where you check your customers&apos;data linked
+          have in the Fimento ecosystem. This is where you check your customers&rsquo; data linked
           to the different services. You can easily create group-based permissions for your
           co-workers, which lets them handle your everyday operations, while you keep
           control of who has access to these sensitive features.
@@ -107,12 +107,12 @@ const TheProduct = () => (
           The invoicing module generates payment plans based on your custom logic or by using a
           predefined. The logic is completely independent of the debt- and interest calculation
           to enable maximum flexibility when developing new product ideas. Invoices can be sent
-          by post or emails depending on the customers&apos;preferences.
+          by post or emails depending on the customers&rsquo; preferences.
         </StyledParagraph>
         <StyledH2>Notification</StyledH2>
         <StyledParagraph>
           This module enables you to receive notifications based on events received from the
-          MoTech ecosystem. Your team can be alerted in real-time about interesting events.
+          Fimento ecosystem. Your team can be alerted in real-time about interesting events.
           It supports emails, Slack, and custom webhooks so that it can be integrated into your
           favorite tools and stay close to the rest of your business.
         </StyledParagraph>
@@ -136,7 +136,7 @@ const TheProduct = () => (
         <StyledH2>Underwriting</StyledH2>
         <StyledParagraph>
           The underwriting module contains all the tools and processes surrounding credit decisions.
-          It relies on a “left to live on” (Swedish: Kvar-att-leva-på-kalkyl) calculation tool to
+          It relies on a &ldquo;left to live on&rdquo; (Swedish: Kvar-att-leva-på-kalkyl) calculation tool to
           provide a solid basis for the credit review. The module supports duality, has extensive
           traceability,and logging to simplify the auditing process. It comes with process
           management tools to organize tasks and distribute customers between your underwriters.
